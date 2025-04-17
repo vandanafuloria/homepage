@@ -1,0 +1,24 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Projects I have created so far",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandanafuloria/homepage.git"
+  },
+  "keywords": [
+    "homepage",
+    "projects"
+  ],
+  "author": "vandana fuloria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vandanafuloria/homepage/issues"
+  },
+  "homepage": "https://github.com/vandanafuloria/homepage#readme"
+}
