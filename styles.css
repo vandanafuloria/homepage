@@ -2,6 +2,49 @@
     margin:0;
     box-sizing: border-box;
 }
+@keyframes slide-up2{
+    0%{
+        translate: 0 10vw ;
+    }
+    100%{
+        translate:  0 0 ;
+    }
+}
+@keyframes bottom-slide{
+    0%{
+        translate: 0 20vw ;
+    }
+    100%{
+        translate:  0 0 ;
+    }
+}
+@keyframes slide-right{
+    0%{
+        translate: 150vw ;
+    }
+    100%{
+        translate:  0 0 ;
+    }
+}
+@keyframes slide-up{
+    0%{
+        translate: 0 -150vw  ;
+    }
+    100%{
+        translate:  0 0 ;
+    }
+}
+
+
+@keyframes heading{
+    0%{
+        translate: -100% 0;
+    }
+
+    100%{
+        translate: 0% 0;
+    }
+}
 .rotate{
  width: 100%;
     transform: skewY(-556deg);
@@ -21,14 +64,29 @@
     position: relative;
    transform: scale(1.2);
    bottom: 2rem;
+   border:1px solid transparent;
+   transition: opacity 2s ease, border 1s ease;
+    opacity: 0.9;
+    animation: slide-up 2s;
+    z-index: 2;
+    
+
 
 }
+.main-container_top:hover .hero{
+    opacity:1;
+    border:1px solid white;
+
+
+}
+
 
 .hero h1{
     position: absolute;
     bottom: 2rem;
     color:white;
     text-align: center;
+    /* animation: slide-right 1s ease 2s; */
 }
 
 .main-container_top{
@@ -51,12 +109,23 @@
     flex-direction: column;
     gap:1rem;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    border:2px solid transparent;
+    opacity: 0.98;
+    transition: opacity 0.2s ease 1s, border 1s ease, background-color 0.8s ease, color 1s ease-out;
+    animation: slide-right 1s ease normal;
+   
+}
+.about:hover{
+
+    opacity: 1;
+    border:2px solid whitesmoke;
+  
 }
 .about p {
    min-width: 20ch;
    max-width: 80ch
    ;
+   color:inherit;
 }
 
 .icons{
@@ -85,6 +154,10 @@ text-align: center ;
     gap:5rem;
     
 }
+.projects-container h1{
+    animation: slide-up2 2s ease 25ms;
+ 
+}
 .project{
    min-width: 200px;
    width: 30%;
@@ -96,6 +169,12 @@ text-align: center ;
    color:rgba(255, 255, 255, 0.733);
    background-color: #053f5c;
    margin: 5px 1rem;
+   animation: slide-up2 4s ease-in-out normal;
+   animation-timeline: view();
+   animation-range: entry-crossing 0% entry-crossing 50%;
+   /* animation-range: entry; */
+  
+   animation-range: entry-crossing;
 
 }
 .project:hover{
@@ -163,6 +242,22 @@ color:#ff9100;
     flex-wrap: wrap;
     margin-top:3rem;
     color:white;
+    animation: bottom-slide 1s ease;
+    animation-timeline: view();
+  
+    animation-range: entry-crossing 0% entry-crossing 50%;
+    /* animation-range: entry; */
+   
+    animation-range: entry-crossing;
+}
+.contact-container_info h1{
+    /* animation: heading 1s ease-in forwards; */
+    animation: heading 1s ease-in-out;
+    /* animation-timeline: view(); */
+    animation-range-start: 100% cover;
+    /* animation-range-end:  */
+     /* animation-range: entry-crossing 0% entry-crossing 50%;
+      */
 }
 .contact-container_info{
     display: flex
