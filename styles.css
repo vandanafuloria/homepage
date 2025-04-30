@@ -144,12 +144,13 @@
 .projects-container h1{
 text-align: center ;
 
+
 }
 
 /********************* projects ****************************/
 .projects-only{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap:5rem;
     
@@ -160,8 +161,8 @@ text-align: center ;
 }
 .project{
    min-width: 200px;
-   width: 30%;
-   max-width: 300px;
+   width: 35%;
+   max-width: 360px;
     border:2px solid #053f5c;
    border-top-right-radius: 20px;
    border-top-left-radius: 20px;
