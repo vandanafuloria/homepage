@@ -1,5 +1,7 @@
 # Homepage :
-# ![img](./images/home.png)
+ ## 👉 [Live preview link]( https://vandanafuloria.github.io/homepage/)
+
+ ![img](./images/home.png)
 
 # Description: 
 This is a homepage designed to practice responsive design, animations, and CSS transitions.
