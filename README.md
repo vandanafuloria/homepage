@@ -1,5 +1,5 @@
 # Homepage :
-# <img  width="100%" src="./images/home.png" >
+# ![img](./images/home.png)
 
 # Description: 
 This is a homepage designed to practice responsive design, animations, and CSS transitions.
